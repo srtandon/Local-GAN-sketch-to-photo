@@ -1,6 +1,15 @@
 # Sketch to Photo GAN Model
 
-This repository contains a Generative Adversarial Network (GAN) model designed to transform sketches into photorealistic images. The model is implemented using TensorFlow and Keras, based on the Wasserstein GAN architecture, and is designed to run locally on a single GPU.
+This repository contains a Generative Adversarial Network (GAN) model designed to transform sketches into photorealistic images. The model is implemented using TensorFlow and Keras, based on the Wasserstein GAN architecture, and is designed to run locally on a single GPU. As you can see from the below example, this model is far from the level of popular generator models based on Stable Diffusion, Midjourney, etc. The purpose of this exercise was to learn about using GPUs and the basics of GAN models.
+
+### Model Results
+Test Photo:
+
+![Test Photo:](https://github.com/srtandon/Local-GAN-sketch-to-photo/blob/main/outputs/test_input_01.png)
+
+Output:
+
+![Output:](https://github.com/srtandon/Local-GAN-sketch-to-photo/blob/main/outputs/test_output_001.png)
 
 ## Table of Contents
 
@@ -61,6 +70,7 @@ cd <repository-name>
 
 ## Dataset
 
+The dataset used for this model was pairs of photos and sketches.
 Ensure your dataset is organized and update any paths in the code if necessary.
 
 ## Model Architecture
@@ -141,6 +151,7 @@ While this GAN model provides a solid foundation for transforming sketches into 
 3. Incorporate attention mechanisms to handle complex sketches better and improve detail generation.
 4. Implement style transfer techniques to allow users to influence the style of the generated photos.
 5. Optimize the code for multi-GPU training to improve accessibility and reduce training time.
+6. Use a better dataset with human-annotated images.
 
 Despite these limitations, this model serves as a valuable starting point for sketch-to-photo generation tasks. Future iterations could address these issues to create a more robust and versatile tool for image generation.
 
